@@ -61,4 +61,4 @@ print('Intercept: ', regr.intercept_)
 # Now we calculate the mean square error 
 # This is the sum of all differences.
 print("Training Error: ", np.mean((regr.predict(X_train) - Y_train) ** 2))
-print("Training Error: ", np.mean((regr.predict(X_test) - Y_test) ** 2))
+print("Testing Error: ", np.mean((regr.predict(X_test) - Y_test) ** 2))
