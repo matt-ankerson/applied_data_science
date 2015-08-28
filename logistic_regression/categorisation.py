@@ -51,3 +51,15 @@ y_pred_train = logreg.predict(X_train)
 plt.scatter(X_train[:, 0], X_train[:, 1], c=y_pred_train)
 plot_decision_boundary(logreg, X)
     
+print('Accuracy on training set: ' + str(logreg.score(X_train, Y_train)))   # 100%
+
+# Now let's see how the algorithm generalises the test data
+Y_pred_test = logreg.predict(X_test)
+plt.scatter(X_test[:, 0], X_test[:, 1], c=Y_pred_test, marker='^')
+plot_decision_boundary(logreg, X)
+
+print('Accuracy on test set: ' + str(logreg.score(X_test, Y_test))) # 100%
+
+# MNIST Digits
+# The MNIST database is a collection of handwritten digits that have been size normalised to fit in
+# a 28x28 pixel box while preserving thier aspect ratio.
