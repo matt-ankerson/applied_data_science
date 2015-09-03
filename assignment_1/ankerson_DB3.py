@@ -52,6 +52,7 @@ tv_expenditure = x[:, 0]
 plt.scatter(tv_expenditure, sales)
 plt.xlabel('TV Expenditure $ (thousands)')
 plt.ylabel('Sales $ (thousands)')
+plt.title('TV Advertising Expenditure vs Sales Revenue')
 plt.show()
 
 # ---------------------------------------------------------
@@ -62,6 +63,7 @@ radio_expenditure = x[:, 1]
 plt.scatter(radio_expenditure, sales)
 plt.xlabel('Radio Expenditure $ (thousands)')
 plt.ylabel('Sales $ (thousands)')
+plt.title('Radio Advertising Expenditure vs Sales Revenue')
 plt.show()
 
 # ---------------------------------------------------------
@@ -72,6 +74,7 @@ newspaper_expenditure = x[:, 2]
 plt.scatter(newspaper_expenditure, sales)
 plt.xlabel('Newspaper Expenditure $ (thousands)')
 plt.ylabel('Sales $ (thousands)')
+plt.title('Newspaper Advertising Expenditure vs Sales Revenue')
 plt.show()
 
 # ---------------------------------------------------------
@@ -81,7 +84,7 @@ plt.show()
 
 # ---------------------------------------------------------
 # Evercise 5 - Is the Newspaper features positively or negatively correlated with sales?
-# There is a very weak positive correlation.
+# There is a very weak positive correlation, to no correlation.
 
 # ---------------------------------------------------------
 # Exercise 6 - Split the data in 2 halves: training set and test set
